@@ -59,10 +59,11 @@ const Cont = styled.div`
     justify-content: space-evenly;
     padding: 7.8rem 0;
     background-color: #cc0000b8;
+    margin-top: -50px;
     color: #2c2c2c;
     @media (max-width: 600px) {
-        padding: 3rem 0;
-        margin-top: 70px;
+        padding-top: 8.5rem;
+        margin-top: -80px;
     }
 
 `

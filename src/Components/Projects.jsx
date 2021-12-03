@@ -37,24 +37,10 @@ const Cont = styled.div`
           /* right top */ 100% 96%,
           /* right bottom */ 0 100% /* left bottom */
         );
-           @media (max-width: 1264px) {
-      clip-path: polygon(
-          0 7%,
-          /* left top */ 100% 0,
-          /* right top */ 100% 93%,
-          /* right bottom */ 0 100% /* left bottom */
-        );
-    }
-    @media (max-width: 768px) {
-       clip-path: polygon(
-          0 5%,
-          /* left top */ 100% 0,
-          /* right top */ 100% 95%,
-          /* right bottom */ 0 100% /* left bottom */
-        );
-    }
-    @media (max-width: 500px) {
-         padding-bottom: 19vw;
+
+ @media (max-width: 500px) {
+         margin-bottom: -120px;
+         padding-bottom: 6vw;
        clip-path: polygon(
           0 3%,
           /* left top */ 100% 0,
@@ -62,6 +48,32 @@ const Cont = styled.div`
           /* right bottom */ 0 100% /* left bottom */
         );
        }
+
+ @media (max-width: 768px) {
+       clip-path: polygon(
+          0 5%,
+          /* left top */ 100% 0,
+          /* right top */ 100% 95%,
+          /* right bottom */ 0 100% /* left bottom */
+        );
+    }
+
+      @media only screen and (min-width: 501px) and (max-width: 800px) {
+        margin-top: -150px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 801px) {
+ margin-bottom: -125px;
+}
+
+           @media (max-width: 1264px) {
+      clip-path: polygon(
+          0 7%,
+          /* left top */ 100% 0,
+          /* right top */ 100% 93%,
+          /* right bottom */ 0 100% /* left bottom */
+        );
+    };  
 `
 const Heading = styled.div`
 font-family: 'Poppins', sans-serif;

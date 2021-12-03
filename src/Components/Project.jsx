@@ -38,7 +38,7 @@ export default function Project({ data }) {
 
 const Cont = styled.div`
     padding-bottom: 1rem;
-    margin: 2rem;
+    margin: 2.2rem;
     border-radius: 0.5rem;
     background-color: #fff;
     width: 85%;
@@ -55,11 +55,11 @@ const Cont = styled.div`
     }
     @media (max-width: 768px) {
         width: 95%;
-        margin: 1rem;
+        margin: 2rem 1rem;
     }
     @media (max-width: 500px) {
         width: 100%;
-        margin: 0.8rem;
+        margin: 1.3rem 0.8rem;
          font-size: 14px;
     }
 `

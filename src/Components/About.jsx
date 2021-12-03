@@ -15,8 +15,7 @@ export default function About() {
                         <Link to='footer' smooth={true} duration={1500}><ContactBtn>Contact me</ContactBtn></Link>
                     </Left>                  
                     <Right>
-                        {/* <img src="dpkbg.png" alt="" /> 
-                       <img src="placeholder.svg" alt="" /> */}
+                        <img src="Me.png" alt="asd" /> 
                     </Right>
                 </Cont>
                 <AboutCont>
@@ -52,7 +51,7 @@ const Cont = styled.div`
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     width: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         width: 100%;
         margin: auto;
     }
@@ -64,7 +63,7 @@ const Left = styled.div`
     flex-direction: column;
     width: 60%;
     padding: 6rem 4rem;
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         padding: 0.3rem 1rem;
         width: 100%;
         margin-top: 4rem;
@@ -148,16 +147,21 @@ box-shadow:
 }
 `
 const Right = styled.div`
-width: 25rem;
+width: 40%;
 padding-top: 5rem;
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     width: 100%;
     padding: 0 3rem;
 }
 
     img{
-        width: 100%;
+        width: 50%;
         padding: 2rem;
+       margin-left: 10vw;
+        @media (max-width: 767px) {
+            margin-left: 0;
+        width: 100%;
+}
     }
 `
 const AboutCont = styled.div`
