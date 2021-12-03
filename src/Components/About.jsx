@@ -10,7 +10,7 @@ export default function About() {
                 <Cont>
                     <Left>
                         <Para>Hi I'm</Para>
-                        <Header>Amol Barkale!</Header>
+                        <Header>Amol Barkale</Header>
                         <Para>Full-Stack Web Developer, living in Maharashtra (India)</Para>
                         <Link to='footer' smooth={true} duration={1500}><ContactBtn>Contact me</ContactBtn></Link>
                     </Left>                  
@@ -91,9 +91,10 @@ letter-spacing: -0.1vw;
 `
 const Para = styled.div`
     font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     padding-left:0.5rem;
+     font-family: 'Poppins', sans-serif;
+ word-spacing: 0.2vw;
     @media (max-width: 768px) {
         padding-left:0.2rem;
         width: 100%;
@@ -103,9 +104,10 @@ const Para = styled.div`
 const ContactBtn = styled.button`
 border-radius: 7px;
 font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+font-weight: 400;
+ word-spacing: 0.2vw;
 width: 10rem;
-height:3rem;
+height:3.5rem;
 background: none;
 border-style: none;
 cursor: pointer;
@@ -148,19 +150,23 @@ box-shadow:
 `
 const Right = styled.div`
 width: 40%;
-padding-top: 5rem;
+padding-top: 0rem;
+
+
 @media (max-width: 767px) {
     width: 100%;
     padding: 0 3rem;
 }
 
     img{
-        width: 50%;
+        width: 30vw;
         padding: 2rem;
-       margin-left: 10vw;
         @media (max-width: 767px) {
             margin-left: 0;
         width: 100%;
+}
+@media (width: 768px) {
+  padding-top: 100px;
 }
     }
 `
@@ -183,6 +189,8 @@ const Heading = styled.div`
 `
 const AboutPara = styled.div`
  font-family: 'Poppins', sans-serif;
+ word-spacing: 0.2vw;
+ text-align: justify;
     font-weight: 400;
     width: 100%;
     line-height: 2rem;

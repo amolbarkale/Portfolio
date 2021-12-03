@@ -45,6 +45,9 @@ const ImgCont = styled.div`
 `
 const Name = styled.div`
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     padding: 0.5rem 0;
+   
 `
 

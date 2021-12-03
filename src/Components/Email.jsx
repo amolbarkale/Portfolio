@@ -27,11 +27,8 @@ export default function ContactUs () {
         <form ref={form} onSubmit={sendEmail}>
             <Cont>
                 <Left>
-                    <p>Name</p>
                 <Inp><input type="text" name="from_name" placeholder="Name" required="true"/></Inp>
-                <p>Mail *</p>
                 <Inp><input type="email" name="user_email" placeholder="Email"/></Inp>
-                <p>Title</p>
                 <Inp><input type="text" name="subject" placeholder="Subject"/></Inp>
                 
             </Left>
@@ -68,14 +65,11 @@ const Cont = styled.div`
 
 `
 const Left = styled.div`
-margin-top: 5px;
+margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    p{
-        color: white;
-        margin-left: 0.5rem;
-    }
+    
 `
 const Right = styled.div`
     display: flex;
@@ -85,41 +79,53 @@ const Right = styled.div`
 const Inp = styled.div`
 margin: 1rem auto;
  p{
-      color: white;
-        margin-left: 0.5rem;
-         margin-top: -0.9rem;
-         
+     color: #ffffff;
+             font-family: 'Poppins', sans-serif;
+
  }
     input{
+                font-family: 'Poppins', sans-serif;
+
         font-size: 1rem;
         text-indent: 0.5rem;
         height: 3rem;
         width: 25rem;
-        outline: none;
-        border-radius: 7px;
+        border: none;
+         outline: none;
+        background-color: #DA4747;
+        border-bottom: 1px solid white;
+        color: #ffffff;
+
         :hover {
-            outline: 1px solid #ffffff;
+            border-bottom: 2px solid white;
+            transition: 2sec;
+             /* border: none;
+             outline: none; */
         }
         ::placeholder{
-            font-size: 10px;
-            color: #c2c0c0;
-            /* color: #ffffff; */
+            font-size: 16px;
+            color: #ffffff;
         }
         @media (max-width: 600px) {
         width: 20rem;
         }
     }
     textarea{
+                font-family: 'Poppins', sans-serif;
         height: 9rem;
         margin-top: 15px !important;
         border-radius: 7px;
         width: 30rem;
+        outline: none;
+        border: none;
         margin: auto;
         padding: 1rem 0;
-        border-right: 1px solid black;
-        border-top: 1px solid gray;
-         border-bottom: 1px solid gray;
-        border-left: 1px solid black;
+
+        ::placeholder{
+                            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+     
         :hover {
             outline: 1px solid #ffffff;
         }
@@ -140,7 +146,7 @@ const Btn = styled.div`
 margin-bottom: 1rem;
 margin: auto;
     button{
-        /* font-family: 'Poppins', sans-serif; */
+        font-family: 'Poppins', sans-serif;
         border-radius: 7px;
         text-align: center;
         height: 3rem;

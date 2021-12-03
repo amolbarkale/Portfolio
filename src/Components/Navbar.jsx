@@ -24,6 +24,7 @@ const Nav = styled.div`
 
     z-index: 10;
     position: sticky;
+    margin-top: 1.5vw;
     top: 0;
     height: 3.5rem;
     background: rgba(1,1,1,1,1);
@@ -100,8 +101,10 @@ const Contact = styled.div`
 
 `
 const Resume = styled.div`
+     background: #7f81a1;
     a{
+       
         text-decoration: none;
-        color:#0f1108;
+        color:white;
     }
 `

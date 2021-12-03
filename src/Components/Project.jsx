@@ -18,16 +18,17 @@ export default function Project({ data }) {
                 <ImgCont>
                         <img src={el.img} alt="" />
                     </ImgCont>
-                        {el.id===aboutId ?
-                        <DetailData onClick={(e) => handleShowAbout(e)} >
+                    {/* {el.id === aboutId ? */}
+                         {
+                        // <DetailData onClick={(e) => handleShowAbout(e)} >
+                         <DetailData >
                             <div>{el.desc}</div>
                             <div><p>Tech Stack : </p> <div>{el.stack}</div></div>
-                        </DetailData> : null}
+                        </DetailData> }
                 <Name>
-                    <div className="name" id={el.id} onClick={(e) => handleShowAbout(e)}>{el.name}</div>
                     <div className="btn">
-                        <Code><a href={el.gh} target="_blank" rel="noopener noreferrer">Code</a></Code>
-                        <Site><a href={el.url} target="_blank" rel="noopener noreferrer">Site</a></Site>
+                        <Code><a href={el.gh} target="_blank" rel="noopener noreferrer">GitHub</a></Code>
+                        <Site><a href={el.url} target="_blank" rel="noopener noreferrer">Demo</a></Site>
                     </div>
                 </Name>   
             </Cont>
@@ -76,10 +77,10 @@ padding: 7px;
 `
 const Name = styled.div`
 font-family: 'Poppins', sans-serif;
-            font-weight: 300;
+            font-weight: 400;
     display: flex;
     justify-content: space-between;
-    padding: 0 3rem;
+    padding: 0 1.5rem;
     margin-top: 0.5rem;
     @media (max-width: 768px) {
         padding: 0 1.5rem;
@@ -115,7 +116,7 @@ font-family: 'Poppins', sans-serif;
 `
 const Code = styled.div`
 font-family: 'Poppins', sans-serif;
-            font-weight: 300;
+            font-weight: 400;
     padding: 0.5rem 0.6rem 0 0.5rem;
     border-right: 1px solid gray;
     cursor: pointer;
@@ -124,7 +125,7 @@ font-family: 'Poppins', sans-serif;
         color: #1f1f1f;
     }
     :hover{
-        background-image: linear-gradient(to right, #fff,#fafafa,#f7f7f7, #eeeeee);
+        background-image: linear-gradient(to right, #fff,#B0C4DB,#B0C4DB, #B0C4DB);
     }
      @media (max-width: 500px) {
          font-size: 14px;
@@ -132,7 +133,7 @@ font-family: 'Poppins', sans-serif;
 `
 const Site = styled.div`
 font-family: 'Poppins', sans-serif;
-            font-weight: 300;
+            font-weight: 400;
     padding: 0.5rem 0.5rem 0 0.5rem;
     cursor: pointer;
     a{
@@ -140,7 +141,7 @@ font-family: 'Poppins', sans-serif;
         color: #1f1f1f;
     }
     :hover{
-        background-image: linear-gradient(to right, #eeeeee,#fafafa,#f7f7f7, #fff);
+        background-image: linear-gradient(to left, #fff,#B0C4DB,#B0C4DB, #B0C4DB);
     }
      @media (max-width: 500px) {
          font-size: 14px;
@@ -149,24 +150,33 @@ font-family: 'Poppins', sans-serif;
 const DetailData = styled.div`
     background-color: white;
     color: #141414;
+    font-weight: 400;
     padding: 1rem 2rem;
+     word-spacing: 0.2vw;
+    font-family: 'Poppins', sans-serif;
     transition: 1s ease-in-out;
      @media (max-width: 500px) {
          font-size: 14px;
      }
     div>p{
         font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+
     }
     div:last-child{
         display: flex;
         margin-top: 1.5rem;
+            font-family: 'Poppins', sans-serif;
+
         div{
             margin-top: -0rem;
+                font-family: 'Poppins', sans-serif;
+
             padding-left: 0.3rem;
         }
     }
-    :hover{
+    /* :hover{
         color: #fff8f8;
         background-image: linear-gradient(#1b1b1b, #171717, #141414, #111111, #000000);
-    }
+    } */
 `

@@ -30,7 +30,7 @@ export default function Skills() {
 
 const Cont = styled.div`
 background-color: #67687c;
-padding-bottom: 8rem;
+padding-bottom: 9rem;
 padding-top:20px;
    clip-path: polygon(
           0 8%,

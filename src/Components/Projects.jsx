@@ -27,7 +27,7 @@ export default function Projects() {
 
 const Cont = styled.div`
     background-color: rgb(176,196,219);
-    margin-top: -90px;
+    margin-top: -105px;
     margin-bottom: -100px;
     padding-bottom: 12vw;
     height: auto;
