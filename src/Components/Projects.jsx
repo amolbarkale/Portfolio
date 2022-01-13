@@ -55,15 +55,16 @@ export default function Projects() {
 }
 
 const Cont = styled.div`
+  box-sizing: border-box;
   background-color: rgb(176, 196, 219);
   margin-top: -105px;
   margin-bottom: -100px;
-  padding-bottom: 12vw;
+  padding-bottom: 14vw;
   height: auto;
   clip-path: polygon(
-    0 4%,
+    0 2%,
     /* left top */ 100% 0,
-    /* right top */ 100% 96%,
+    /* right top */ 100% 98%,
     /* right bottom */ 0 100% /* left bottom */
   );
 
@@ -71,18 +72,18 @@ const Cont = styled.div`
     margin-bottom: -120px;
     padding-bottom: 6vw;
     clip-path: polygon(
-      0 3%,
+      0 2%,
       /* left top */ 100% 0,
-      /* right top */ 100% 97%,
+      /* right top */ 100% 98%,
       /* right bottom */ 0 100% /* left bottom */
     );
   }
 
   @media (max-width: 768px) {
     clip-path: polygon(
-      0 5%,
+      0 2%,
       /* left top */ 100% 0,
-      /* right top */ 100% 95%,
+      /* right top */ 100% 98%,
       /* right bottom */ 0 100% /* left bottom */
     );
   }
@@ -97,9 +98,9 @@ const Cont = styled.div`
 
   @media (max-width: 1264px) {
     clip-path: polygon(
-      0 7%,
+      0 2%,
       /* left top */ 100% 0,
-      /* right top */ 100% 93%,
+      /* right top */ 100% 98%,
       /* right bottom */ 0 100% /* left bottom */
     );
   } ;
